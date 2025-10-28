@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Android;
+    src: url(./fontes/idroid.otf);
+}
+
+/*variáveis CSS*/
+:root{
+    --cor-primaria: #1a5c37;
+    --cor-secundaria: #3bd480;
+    --cor-fundo: #84e0ac;
+    --cor-texto: white;
+
+    --fonte-principal: Arial, Helvetica, sans-serif;
+    --fonte-titulo: Android, sans-serif;
+    /* Para utilizar: var(--nomevar) */
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #84e0ac;
+    text-align: justify;
+}
+
+h1, h2 {
+    font-family: Android, sans-serif;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, var(--cor-secundaria), var(--cor-primaria));
+}
+
+nav {
+    text-align: left;
+    background-color: var(--cor-primaria);
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin-right:  20px;
+    font-weight: bold;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+main {
+    min-width: 280px;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    color: #1a5c37;
+    margin-bottom: 20px;
+}
+
+h2{
+    background-image: linear-gradient(to right, var(--cor-fundo), transparent);
+}
+
+p {
+    text-indent: 30px;
+    margin: 10px 0px;
+
+}
+
+#video{
+    background-color: var(--cor-primaria);
+    padding: 50px;
+    margin: 20px -30px 40px -30px;
+}
+
+iframe{
+    width: 100%;
+}
+
+.imagem{
+    width: 100%;
+    text-align: center;
+}
+
+.aprender {
+    background-color: #84e0ac;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.575);
+}
+
+div > h3 {
+    background-color: rgb(68, 167, 68);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+ul {
+    list-style-position: inside;
+    columns: 2;
+    font-weight: bolder;
+    list-style-type: '\1F5F8\00A0';
+}
+
+footer{
+    background-color: #1a5c37;
+    color: white;
+    text-align: center;
+}
