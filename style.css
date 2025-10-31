@@ -37,6 +37,7 @@ header {
     text-align: center;
     padding: 10px;
     background-image: linear-gradient(to bottom, var(--cor-secundaria), var(--cor-primaria));
+    min-width: 320px;
 }
 
 nav {
@@ -44,12 +45,13 @@ nav {
     background-color: var(--cor-primaria);
     padding: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    min-width: 320px;
 }
 
 nav > a {
     text-decoration: none;
     color: white;
-    margin-right:  20px;
+    margin-right: 20px;
     font-weight: bold;
     padding: 10px;
     transition-duration: 0.5s;
@@ -72,6 +74,7 @@ main {
     margin-bottom: 20px;
 }
 
+
 h2{
     background-image: linear-gradient(to right, var(--cor-fundo), transparent);
 }
@@ -79,7 +82,6 @@ h2{
 p {
     text-indent: 30px;
     margin: 10px 0px;
-
 }
 
 #video{
@@ -93,8 +95,12 @@ iframe{
 }
 
 .imagem{
-    width: 100%;
     text-align: center;
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
 }
 
 .aprender {
@@ -125,4 +131,5 @@ footer{
     background-color: #1a5c37;
     color: white;
     text-align: center;
+    width: 100%;
 }
